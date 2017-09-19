@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "plomy/AppDelegate.swift"
@@ -17,14 +17,14 @@
             endingLineNumber = "2">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "plomy.AppDelegate.__deallocating_deinit"
                   moduleName = "plomy"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ren/Desktop/plomy/plomy/AppDelegate.swift"
-                  timestampString = "527232880.212405"
+                  timestampString = "527523556.438878"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -32,14 +32,14 @@
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "plomy.AppDelegate.init () -&gt; plomy.AppDelegate"
                   moduleName = "plomy"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ren/Desktop/plomy/plomy/AppDelegate.swift"
-                  timestampString = "527232880.215472"
+                  timestampString = "527523556.441741"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -47,14 +47,14 @@
                   offsetFromSymbolStart = "24">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "plomy.AppDelegate.__allocating_init () -&gt; plomy.AppDelegate"
                   moduleName = "plomy"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ren/Desktop/plomy/plomy/AppDelegate.swift"
-                  timestampString = "527232880.218418"
+                  timestampString = "527523556.444373"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -62,14 +62,14 @@
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "main"
                   moduleName = "plomy"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ren/Desktop/plomy/plomy/AppDelegate.swift"
-                  timestampString = "527232880.220871"
+                  timestampString = "527523556.447652"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -86,13 +86,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "plomy/AppDelegate.swift"
-            timestampString = "527232910.582684"
+            timestampString = "527523245.811534"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "AppDelegate"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "plomy/TimeLineViewController.swift"
+            timestampString = "527529791.164251"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "didReceiveMemoryWarning()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

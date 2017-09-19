@@ -37,7 +37,7 @@
         <!--search-->
         <scene sceneID="KsP-Hg-GXb">
             <objects>
-                <viewController id="OIY-NP-Wcs" sceneMemberID="viewController">
+                <viewController id="OIY-NP-Wcs" customClass="SearchViewController" customModule="plomy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iGT-lz-Ztg"/>
                         <viewControllerLayoutGuide type="bottom" id="Lpe-gq-7FU"/>
@@ -56,7 +56,7 @@
         <!--Notifications-->
         <scene sceneID="00F-ds-ySI">
             <objects>
-                <viewController id="0wf-c6-S7p" sceneMemberID="viewController">
+                <viewController id="0wf-c6-S7p" customClass="NotificationViewController" customModule="plomy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ffo-3e-q4L"/>
                         <viewControllerLayoutGuide type="bottom" id="Td2-68-fX7"/>
@@ -77,7 +77,7 @@
         <!--Profile-->
         <scene sceneID="RQI-lL-IqH">
             <objects>
-                <viewController id="1El-bP-wJJ" sceneMemberID="viewController">
+                <viewController id="1El-bP-wJJ" customClass="ProfileViewController" customModule="plomy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jj7-11-d1K"/>
                         <viewControllerLayoutGuide type="bottom" id="GW3-HK-Ygz"/>
@@ -113,23 +113,33 @@
             <point key="canvasLocation" x="1020" y="-951"/>
         </scene>
         <!--home-->
-        <scene sceneID="1py-Qs-9mx">
+        <scene sceneID="uM7-SO-gDJ">
             <objects>
-                <viewController id="pxs-Of-hOq" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4Ig-Vi-gob"/>
-                        <viewControllerLayoutGuide type="bottom" id="1MX-tj-vIA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NOu-ee-p0A">
+                <tableViewController id="epZ-Yy-8At" customClass="HomeTableViewController" customModule="plomy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="31" sectionHeaderHeight="28" sectionFooterHeight="28" id="1JL-vE-RzZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="home" image="ic_home" id="XO6-IR-lLN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xrM-Rt-JMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="31" id="cCL-Hg-7qh">
+                                <rect key="frame" x="0.0" y="28" width="320" height="31"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cCL-Hg-7qh" id="wlJ-cy-3Tf">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="30.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="epZ-Yy-8At" id="eIQ-JP-Hi5"/>
+                            <outlet property="delegate" destination="epZ-Yy-8At" id="71d-l0-tP7"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="home" image="ic_home" id="I2u-im-iBX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66a-wp-1XU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021" y="-275"/>
+            <point key="canvasLocation" x="1008.75" y="-289.43661971830988"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nhK-c9-0Nr">
@@ -141,7 +151,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="pxs-Of-hOq" kind="relationship" relationship="viewControllers" id="g2v-qf-EIu"/>
+                        <segue destination="epZ-Yy-8At" kind="relationship" relationship="viewControllers" id="Lt0-un-REc"/>
                         <segue destination="OIY-NP-Wcs" kind="relationship" relationship="viewControllers" id="cNg-2y-5tw"/>
                         <segue destination="jou-Ar-fOB" kind="relationship" relationship="viewControllers" id="doN-CI-lDW"/>
                         <segue destination="0wf-c6-S7p" kind="relationship" relationship="viewControllers" id="Cx7-Pb-Dvz"/>

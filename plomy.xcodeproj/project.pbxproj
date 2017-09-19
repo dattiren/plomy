@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A55A37F31F7166E400DE037B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55A37F21F7166E400DE037B /* TableViewCell.xib */; };
+		A55A37F51F716FA400DE037B /* CustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A37F41F716FA400DE037B /* CustomClass.swift */; };
+		A55A37F71F71777500DE037B /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A37F61F71777500DE037B /* HomeTableViewController.swift */; };
 		A5E3E96F1F4C3CE8002392E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3E96E1F4C3CE8002392E5 /* AppDelegate.swift */; };
 		A5E3E9711F4C3CE8002392E5 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3E9701F4C3CE8002392E5 /* TimeLineViewController.swift */; };
 		A5E3E9741F4C3CE8002392E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E3E9721F4C3CE8002392E5 /* Main.storyboard */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A55A37F21F7166E400DE037B /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		A55A37F41F716FA400DE037B /* CustomClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomClass.swift; sourceTree = "<group>"; };
+		A55A37F61F71777500DE037B /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		A5E3E96B1F4C3CE8002392E5 /* plomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E3E96E1F4C3CE8002392E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5E3E9701F4C3CE8002392E5 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +123,8 @@
 				A5E3E9751F4C3CE8002392E5 /* Assets.xcassets */,
 				A5E3E9771F4C3CE8002392E5 /* LaunchScreen.storyboard */,
 				A5E3E97A1F4C3CE8002392E5 /* Info.plist */,
+				A55A37F21F7166E400DE037B /* TableViewCell.xib */,
+				A55A37F41F716FA400DE037B /* CustomClass.swift */,
 			);
 			path = plomy;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 			children = (
 				A5E3E9701F4C3CE8002392E5 /* TimeLineViewController.swift */,
 				A5E3E99D1F4C62DA002392E5 /* PostTableViewCell.swift */,
+				A55A37F61F71777500DE037B /* HomeTableViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -291,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5E3E9791F4C3CE8002392E5 /* LaunchScreen.storyboard in Resources */,
+				A55A37F31F7166E400DE037B /* TableViewCell.xib in Resources */,
 				A5E3E9761F4C3CE8002392E5 /* Assets.xcassets in Resources */,
 				A5E3E9741F4C3CE8002392E5 /* Main.storyboard in Resources */,
 			);
@@ -322,6 +332,8 @@
 				A5E3E9711F4C3CE8002392E5 /* TimeLineViewController.swift in Sources */,
 				A5E3E96F1F4C3CE8002392E5 /* AppDelegate.swift in Sources */,
 				A5E3E9AF1F4C6E18002392E5 /* ProfileViewController.swift in Sources */,
+				A55A37F51F716FA400DE037B /* CustomClass.swift in Sources */,
+				A55A37F71F71777500DE037B /* HomeTableViewController.swift in Sources */,
 				A5E3E9A91F4C6D77002392E5 /* SearchViewController.swift in Sources */,
 				A5E3E99E1F4C62DA002392E5 /* PostTableViewCell.swift in Sources */,
 			);
@@ -574,6 +586,7 @@
 				A5E3E9951F4C3CE8002392E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5E3E9961F4C3CE8002392E5 /* Build configuration list for PBXNativeTarget "plomyTests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +595,7 @@
 				A5E3E9981F4C3CE8002392E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5E3E9991F4C3CE8002392E5 /* Build configuration list for PBXNativeTarget "plomyUITests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +604,7 @@
 				A5E3E99B1F4C3CE8002392E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
