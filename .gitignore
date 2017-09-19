@@ -1,0 +1,7 @@
+#CocoaPod
+Pods/*
+*.xcworkspace
+.DS_Store
+## Build generated
+build/
+DerivedData
