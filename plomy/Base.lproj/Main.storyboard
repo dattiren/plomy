@@ -116,18 +116,43 @@
         <scene sceneID="uM7-SO-gDJ">
             <objects>
                 <tableViewController id="epZ-Yy-8At" customClass="HomeTableViewController" customModule="plomy" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="31" sectionHeaderHeight="28" sectionFooterHeight="28" id="1JL-vE-RzZ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" id="1JL-vE-RzZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="31" id="cCL-Hg-7qh">
-                                <rect key="frame" x="0.0" y="28" width="320" height="31"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="postCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="84" id="cCL-Hg-7qh" customClass="PostTableViewCell" customModule="plomy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cCL-Hg-7qh" id="wlJ-cy-3Tf">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="30.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="83.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_home" translatesAutoresizingMaskIntoConstraints="NO" id="qWV-ln-sWQ">
+                                            <rect key="frame" x="8" y="0.0" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzv-EN-rfN">
+                                            <rect key="frame" x="59" y="5" width="99" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTh-xJ-n3H">
+                                            <rect key="frame" x="8" y="34" width="304" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="containText" destination="OTh-xJ-n3H" id="18G-kg-fW4"/>
+                                    <outlet property="profileImage" destination="qWV-ln-sWQ" id="yC3-A5-lzl"/>
+                                    <outlet property="userName" destination="Dzv-EN-rfN" id="Tih-aa-Isx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
