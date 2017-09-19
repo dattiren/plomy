@@ -22,6 +22,7 @@
 		A5E3E9AB1F4C6DA8002392E5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3E9AA1F4C6DA8002392E5 /* NotificationViewController.swift */; };
 		A5E3E9AD1F4C6DFA002392E5 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3E9AC1F4C6DFA002392E5 /* PostViewController.swift */; };
 		A5E3E9AF1F4C6E18002392E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3E9AE1F4C6E18002392E5 /* ProfileViewController.swift */; };
+		C0BCB9581F718BA1004B253C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCB9571F718BA1004B253C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A5E3E9AA1F4C6DA8002392E5 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		A5E3E9AC1F4C6DFA002392E5 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		A5E3E9AE1F4C6E18002392E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C0BCB9571F718BA1004B253C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				A5E3E9701F4C3CE8002392E5 /* TimeLineViewController.swift */,
 				A5E3E99D1F4C62DA002392E5 /* PostTableViewCell.swift */,
 				A55A37F61F71777500DE037B /* HomeTableViewController.swift */,
+				C0BCB9571F718BA1004B253C /* HomeViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				A5E3E9711F4C3CE8002392E5 /* TimeLineViewController.swift in Sources */,
 				A5E3E96F1F4C3CE8002392E5 /* AppDelegate.swift in Sources */,
 				A5E3E9AF1F4C6E18002392E5 /* ProfileViewController.swift in Sources */,
+				C0BCB9581F718BA1004B253C /* HomeViewController.swift in Sources */,
 				A55A37F51F716FA400DE037B /* CustomClass.swift in Sources */,
 				A55A37F71F71777500DE037B /* HomeTableViewController.swift in Sources */,
 				A5E3E9A91F4C6D77002392E5 /* SearchViewController.swift in Sources */,
