@@ -24,6 +24,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         homeTableView.estimatedRowHeight = 200
         homeTableView.rowHeight = UITableViewAutomaticDimension
         
+        self.homeTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "home_cell")
         articles = [
             "私わたくしはその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。",
             "この書の世に出づるにいたりたるは、函館にある秦慶治氏、及び信濃にある神津猛氏のたまものなり。労作終るの日にあたりて、このものがたりを二人の恩人のまへにさゝぐ。",
@@ -49,11 +50,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "home_cell", for: indexPath) as! TableViewCell
         //let cell = tableView.dequeueReusableCell(withIdentifier: "postCell") as! PostTableViewCell
         
-        cell.userName.text = indexPath.row.description + "番目のcell"
-        cell.containText.text = articles[indexPath.row]
+        cell.username.text = indexPath.row.description + "番目のcell"
+        cell.message.text = articles[indexPath.row]
         cell.layoutIfNeeded()
         return cell
     } 
