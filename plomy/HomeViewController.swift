@@ -8,22 +8,23 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class HomeViewController: UIViewController{
     var articles: [String] = []
     
-    @IBOutlet weak var homeTableView: UITableView!
+    //@IBOutlet weak var homeTableView: UITableView!
+    @IBOutlet weak var homeStackViewCell: TableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //homeStackViewCell.username.text = "ren"
         //viewControllerに貼り付けたtableViewをこのviewControllerのtableViewにするための処理
-        homeTableView.delegate = self
-        homeTableView.dataSource = self
+//        homeTableView.delegate = self
+//        homeTableView.dataSource = self
+//
+//        homeTableView.estimatedRowHeight = 200
+//        homeTableView.rowHeight = UITableViewAutomaticDimension
         
-        homeTableView.estimatedRowHeight = 200
-        homeTableView.rowHeight = UITableViewAutomaticDimension
-        
+
         articles = [
             "私わたくしはその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。",
             "この書の世に出づるにいたりたるは、函館にある秦慶治氏、及び信濃にある神津猛氏のたまものなり。労作終るの日にあたりて、このものがたりを二人の恩人のまへにさゝぐ。",
@@ -37,24 +38,30 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 1
+//    }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return articles.count
-    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return articles.count
+//    }
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "home_cell", for: indexPath)
+//        cell.textLabel?.text = "だっちゃん"
+//        return cell
+//    }
     
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "postCell") as! PostTableViewCell
-        
-        cell.userName.text = indexPath.row.description + "番目のcell"
-        cell.containText.text = articles[indexPath.row]
-        cell.layoutIfNeeded()
-        return cell
-    } 
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
+//        //let cell = tableView.dequeueReusableCell(withIdentifier: "postCell") as! PostTableViewCell
+//
+//        cell.userName.text = indexPath.row.description + "番目のcell"
+//        cell.containText.text = articles[indexPath.row]
+//        cell.layoutIfNeeded()
+//        return cell
+//    }
+    
 }
