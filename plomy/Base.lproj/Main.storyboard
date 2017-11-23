@@ -124,13 +124,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-Gb-gWS">
-                                <rect key="frame" x="0.0" y="67" width="320" height="452"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-Gb-gWS">
+                                <rect key="frame" x="0.0" y="65" width="320" height="454"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bNN-79-hKs" firstAttribute="top" secondItem="Vvs-Gb-gWS" secondAttribute="bottom" id="CbM-Kq-m6K"/>
+                            <constraint firstItem="Vvs-Gb-gWS" firstAttribute="top" secondItem="spY-Ep-7a8" secondAttribute="bottom" constant="45" id="GGh-GG-Lvp"/>
+                            <constraint firstAttribute="trailing" secondItem="Vvs-Gb-gWS" secondAttribute="trailing" id="WvG-QZ-PeC"/>
+                            <constraint firstItem="Vvs-Gb-gWS" firstAttribute="leading" secondItem="D5Y-yb-rFW" secondAttribute="leading" id="a2e-u8-0iP"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="home" image="ic_home" id="rhs-dh-05Z"/>
                     <connections>
