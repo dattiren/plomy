@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -131,13 +132,72 @@
                     <view key="view" contentMode="scaleToFill" id="xiP-hr-gPU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-HN-gae">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="9Ir-Y2-WSM">
+                                        <barButtonItem key="leftBarButtonItem" title="Close" id="HTu-Vy-Be7">
+                                            <color key="tintColor" red="0.27058823529999998" green="0.74901960779999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="投稿" id="iIx-eV-GUF">
+                                            <color key="tintColor" red="0.27058823529999998" green="0.74901960779999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="jTz-1U-yKM" customClass="CircleImageView" customModule="plomy" customModuleProvider="target">
+                                <rect key="frame" x="16" y="81" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Bra-C7-njb"/>
+                                    <constraint firstAttribute="height" constant="50" id="gmo-2s-34C"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="だっちゃん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7G5-dj-8ku">
+                                <rect key="frame" x="74" y="96" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Iz-Cwe">
+                                <rect key="frame" x="74" y="125" width="230" height="125"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.87284165620803833" green="0.87350624799728394" blue="0.87294465303421021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ysa-HN-gae" secondAttribute="trailing" id="5Rb-tV-zbi"/>
+                            <constraint firstItem="Ysa-HN-gae" firstAttribute="top" secondItem="c2q-wr-EqI" secondAttribute="bottom" id="IU0-rT-hRo"/>
+                            <constraint firstItem="FQu-Iz-Cwe" firstAttribute="trailing" secondItem="xiP-hr-gPU" secondAttribute="trailingMargin" id="PWz-sZ-r5q"/>
+                            <constraint firstItem="Ysa-HN-gae" firstAttribute="leading" secondItem="xiP-hr-gPU" secondAttribute="leading" id="QEN-vq-C9b"/>
+                            <constraint firstItem="FQu-Iz-Cwe" firstAttribute="top" secondItem="7G5-dj-8ku" secondAttribute="bottom" constant="8" id="RMy-pb-ljn"/>
+                            <constraint firstItem="FQu-Iz-Cwe" firstAttribute="top" secondItem="7G5-dj-8ku" secondAttribute="bottom" constant="8" id="YoN-hS-onz"/>
+                            <constraint firstItem="FQu-Iz-Cwe" firstAttribute="leading" secondItem="jTz-1U-yKM" secondAttribute="trailing" constant="8" id="kz9-mO-Evs"/>
+                            <constraint firstItem="jTz-1U-yKM" firstAttribute="leading" secondItem="xiP-hr-gPU" secondAttribute="leadingMargin" id="niz-jh-85h"/>
+                            <constraint firstItem="7G5-dj-8ku" firstAttribute="leading" secondItem="jTz-1U-yKM" secondAttribute="trailing" constant="8" id="qZk-AH-QPd"/>
+                            <constraint firstItem="7G5-dj-8ku" firstAttribute="top" secondItem="Ysa-HN-gae" secondAttribute="bottom" constant="32" id="yTv-b0-KTI"/>
+                            <constraint firstItem="jTz-1U-yKM" firstAttribute="top" secondItem="Ysa-HN-gae" secondAttribute="bottom" constant="17" id="yzB-Vb-WyW"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="edit" image="ic_mode_edit" id="VTh-VW-3u6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7X-yR-CVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="-951"/>
+            <point key="canvasLocation" x="1020" y="-951.76056338028172"/>
         </scene>
         <!--home-->
         <scene sceneID="DXb-Ja-R97">
@@ -212,5 +272,6 @@
         <image name="ic_notifications" width="24" height="24"/>
         <image name="ic_person" width="24" height="24"/>
         <image name="ic_search" width="24" height="24"/>
+        <image name="sample" width="140" height="140"/>
     </resources>
 </document>
