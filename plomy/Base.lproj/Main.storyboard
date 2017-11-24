@@ -124,17 +124,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-Gb-gWS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-Gb-gWS">
                                 <rect key="frame" x="0.0" y="65" width="320" height="454"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1u-0N-zur">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                <color key="backgroundColor" red="0.27058823529999998" green="0.74901960779999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="LPF-gs-x2U"/>
+                                    <constraint firstAttribute="height" constant="65" id="g6r-wT-a87"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="I1u-0N-zur" secondAttribute="trailing" id="A2M-MV-LVX"/>
                             <constraint firstItem="bNN-79-hKs" firstAttribute="top" secondItem="Vvs-Gb-gWS" secondAttribute="bottom" id="CbM-Kq-m6K"/>
+                            <constraint firstItem="I1u-0N-zur" firstAttribute="top" secondItem="D5Y-yb-rFW" secondAttribute="top" id="Dyv-Zi-WWy"/>
                             <constraint firstItem="Vvs-Gb-gWS" firstAttribute="top" secondItem="spY-Ep-7a8" secondAttribute="bottom" constant="45" id="GGh-GG-Lvp"/>
                             <constraint firstAttribute="trailing" secondItem="Vvs-Gb-gWS" secondAttribute="trailing" id="WvG-QZ-PeC"/>
                             <constraint firstItem="Vvs-Gb-gWS" firstAttribute="leading" secondItem="D5Y-yb-rFW" secondAttribute="leading" id="a2e-u8-0iP"/>
+                            <constraint firstItem="I1u-0N-zur" firstAttribute="leading" secondItem="D5Y-yb-rFW" secondAttribute="leading" id="g9E-3t-Y0g"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="home" image="ic_home" id="rhs-dh-05Z"/>
