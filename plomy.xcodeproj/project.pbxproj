@@ -45,6 +45,7 @@
 /* Begin PBXFileReference section */
 		A55A37F21F7166E400DE037B /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A55A37F41F716FA400DE037B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A56AD67B1FC98A3A0036BB97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A586B3FB1FC7095A00D4C8DF /* view_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view_extension.swift; sourceTree = "<group>"; };
 		A586B3FD1FC7193100D4C8DF /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		A5E3E96B1F4C3CE8002392E5 /* plomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +116,7 @@
 		A5E3E96D1F4C3CE8002392E5 /* plomy */ = {
 			isa = PBXGroup;
 			children = (
+				A56AD67B1FC98A3A0036BB97 /* GoogleService-Info.plist */,
 				A5E3E96E1F4C3CE8002392E5 /* AppDelegate.swift */,
 				A5E3E9A71F4C6C83002392E5 /* Profile */,
 				A5E3E9A61F4C6C76002392E5 /* Post */,
