@@ -17,5 +17,8 @@ target 'plomy' do
     inherit! :search_paths
     # Pods for testing
   end
+	pod 'Firebase/Database'
+	pod 'Firebase/Core'
+	pod 'Firebase/Auth'
 
 end

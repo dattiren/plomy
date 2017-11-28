@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6410998E9F79387548C92E /* Pods_plomyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E32B11FE57A88ADC9D852A /* Pods_plomyUITests.framework */; };
+		5084A183BC38BF287B7DBFE6 /* Pods_plomyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEAE1E4762D1F6D6B68E1F9 /* Pods_plomyTests.framework */; };
+		A51936B71FC993D8003071D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A51936B61FC993D8003071D3 /* GoogleService-Info.plist */; };
 		A55A37F31F7166E400DE037B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55A37F21F7166E400DE037B /* TableViewCell.xib */; };
 		A55A37F51F716FA400DE037B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A37F41F716FA400DE037B /* TableViewCell.swift */; };
 		A586B3FC1FC7095A00D4C8DF /* view_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586B3FB1FC7095A00D4C8DF /* view_extension.swift */; };
@@ -23,6 +26,7 @@
 		A5E3E9AD1F4C6DFA002392E5 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3E9AC1F4C6DFA002392E5 /* PostViewController.swift */; };
 		A5E3E9AF1F4C6E18002392E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3E9AE1F4C6E18002392E5 /* ProfileViewController.swift */; };
 		C0BCB9581F718BA1004B253C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCB9571F718BA1004B253C /* HomeViewController.swift */; };
+		F9F2FF304B00B1399F9F026E /* Pods_plomy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F65DD0AAB20C9E7625AAE8 /* Pods_plomy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0384A5D760C4B73A6F794EFB /* Pods-plomy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plomy.release.xcconfig"; path = "Pods/Target Support Files/Pods-plomy/Pods-plomy.release.xcconfig"; sourceTree = "<group>"; };
+		19F04CCCB9DF8EEAF7D94A33 /* Pods-plomyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plomyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-plomyTests/Pods-plomyTests.release.xcconfig"; sourceTree = "<group>"; };
+		26F65DD0AAB20C9E7625AAE8 /* Pods_plomy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plomy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A8776FB8978DEA0945784D /* Pods-plomy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plomy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-plomy/Pods-plomy.debug.xcconfig"; sourceTree = "<group>"; };
+		63E32B11FE57A88ADC9D852A /* Pods_plomyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plomyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891198F5C3AF87AB72B1B0B3 /* Pods-plomyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plomyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-plomyUITests/Pods-plomyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B4F241C4959C01C7B81E0B8 /* Pods-plomyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plomyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-plomyTests/Pods-plomyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A51936B61FC993D8003071D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A55A37F21F7166E400DE037B /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A55A37F41F716FA400DE037B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		A56AD67B1FC98A3A0036BB97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A586B3FB1FC7095A00D4C8DF /* view_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view_extension.swift; sourceTree = "<group>"; };
 		A586B3FD1FC7193100D4C8DF /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		A5E3E96B1F4C3CE8002392E5 /* plomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +77,8 @@
 		A5E3E9AC1F4C6DFA002392E5 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		A5E3E9AE1F4C6E18002392E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C0BCB9571F718BA1004B253C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CA2CCE13A81EF7B0F69A21AA /* Pods-plomyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plomyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-plomyUITests/Pods-plomyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DFEAE1E4762D1F6D6B68E1F9 /* Pods_plomyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plomyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F2FF304B00B1399F9F026E /* Pods_plomy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5084A183BC38BF287B7DBFE6 /* Pods_plomyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,19 +102,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6410998E9F79387548C92E /* Pods_plomyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38567060AF66D46D3273E7DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26F65DD0AAB20C9E7625AAE8 /* Pods_plomy.framework */,
+				DFEAE1E4762D1F6D6B68E1F9 /* Pods_plomyTests.framework */,
+				63E32B11FE57A88ADC9D852A /* Pods_plomyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99C58DB9D8A7DBA576B72C96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54A8776FB8978DEA0945784D /* Pods-plomy.debug.xcconfig */,
+				0384A5D760C4B73A6F794EFB /* Pods-plomy.release.xcconfig */,
+				9B4F241C4959C01C7B81E0B8 /* Pods-plomyTests.debug.xcconfig */,
+				19F04CCCB9DF8EEAF7D94A33 /* Pods-plomyTests.release.xcconfig */,
+				891198F5C3AF87AB72B1B0B3 /* Pods-plomyUITests.debug.xcconfig */,
+				CA2CCE13A81EF7B0F69A21AA /* Pods-plomyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A5E3E9621F4C3CE8002392E5 = {
 			isa = PBXGroup;
 			children = (
+				A51936B61FC993D8003071D3 /* GoogleService-Info.plist */,
 				A5E3E96D1F4C3CE8002392E5 /* plomy */,
 				A5E3E9821F4C3CE8002392E5 /* plomyTests */,
 				A5E3E98D1F4C3CE8002392E5 /* plomyUITests */,
 				A5E3E96C1F4C3CE8002392E5 /* Products */,
+				99C58DB9D8A7DBA576B72C96 /* Pods */,
+				38567060AF66D46D3273E7DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,7 +158,6 @@
 		A5E3E96D1F4C3CE8002392E5 /* plomy */ = {
 			isa = PBXGroup;
 			children = (
-				A56AD67B1FC98A3A0036BB97 /* GoogleService-Info.plist */,
 				A5E3E96E1F4C3CE8002392E5 /* AppDelegate.swift */,
 				A5E3E9A71F4C6C83002392E5 /* Profile */,
 				A5E3E9A61F4C6C76002392E5 /* Post */,
@@ -201,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E3E9931F4C3CE8002392E5 /* Build configuration list for PBXNativeTarget "plomy" */;
 			buildPhases = (
+				04B034D3E3F1898076E6C049 /* [CP] Check Pods Manifest.lock */,
 				A5E3E9671F4C3CE8002392E5 /* Sources */,
 				A5E3E9681F4C3CE8002392E5 /* Frameworks */,
 				A5E3E9691F4C3CE8002392E5 /* Resources */,
+				0B5FB10B24A12A56F5C76A9D /* [CP] Embed Pods Frameworks */,
+				17347EA71ED05AD135BFF485 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E3E9961F4C3CE8002392E5 /* Build configuration list for PBXNativeTarget "plomyTests" */;
 			buildPhases = (
+				4781CDE875A7D8729727E712 /* [CP] Check Pods Manifest.lock */,
 				A5E3E97B1F4C3CE8002392E5 /* Sources */,
 				A5E3E97C1F4C3CE8002392E5 /* Frameworks */,
 				A5E3E97D1F4C3CE8002392E5 /* Resources */,
+				4B21F3C1BC20F0B578A77988 /* [CP] Embed Pods Frameworks */,
+				9583FFBB77A74D777C55906E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E3E9991F4C3CE8002392E5 /* Build configuration list for PBXNativeTarget "plomyUITests" */;
 			buildPhases = (
+				833721CF1822696FA339AC3F /* [CP] Check Pods Manifest.lock */,
 				A5E3E9861F4C3CE8002392E5 /* Sources */,
 				A5E3E9871F4C3CE8002392E5 /* Frameworks */,
 				A5E3E9881F4C3CE8002392E5 /* Resources */,
+				3EBC613FE61349EDC9360569 /* [CP] Embed Pods Frameworks */,
+				619E4994E9AC69AEB19FC1C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,6 +356,7 @@
 			files = (
 				A5E3E9791F4C3CE8002392E5 /* LaunchScreen.storyboard in Resources */,
 				A55A37F31F7166E400DE037B /* TableViewCell.xib in Resources */,
+				A51936B71FC993D8003071D3 /* GoogleService-Info.plist in Resources */,
 				A5E3E9761F4C3CE8002392E5 /* Assets.xcassets in Resources */,
 				A5E3E9741F4C3CE8002392E5 /* Main.storyboard in Resources */,
 			);
@@ -326,6 +377,162 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04B034D3E3F1898076E6C049 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plomy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B5FB10B24A12A56F5C76A9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-plomy/Pods-plomy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-plomy/Pods-plomy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17347EA71ED05AD135BFF485 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-plomy/Pods-plomy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EBC613FE61349EDC9360569 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-plomyUITests/Pods-plomyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4781CDE875A7D8729727E712 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plomyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B21F3C1BC20F0B578A77988 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-plomyTests/Pods-plomyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		619E4994E9AC69AEB19FC1C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-plomyUITests/Pods-plomyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		833721CF1822696FA339AC3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plomyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9583FFBB77A74D777C55906E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-plomyTests/Pods-plomyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5E3E9671F4C3CE8002392E5 /* Sources */ = {
@@ -491,6 +698,7 @@
 		};
 		A5E3E9941F4C3CE8002392E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A8776FB8978DEA0945784D /* Pods-plomy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3XXP2WY9Q3;
@@ -504,6 +712,7 @@
 		};
 		A5E3E9951F4C3CE8002392E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0384A5D760C4B73A6F794EFB /* Pods-plomy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3XXP2WY9Q3;
@@ -517,6 +726,7 @@
 		};
 		A5E3E9971F4C3CE8002392E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B4F241C4959C01C7B81E0B8 /* Pods-plomyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +742,7 @@
 		};
 		A5E3E9981F4C3CE8002392E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F04CCCB9DF8EEAF7D94A33 /* Pods-plomyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +758,7 @@
 		};
 		A5E3E99A1F4C3CE8002392E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891198F5C3AF87AB72B1B0B3 /* Pods-plomyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3XXP2WY9Q3;
@@ -561,6 +773,7 @@
 		};
 		A5E3E99B1F4C3CE8002392E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2CCE13A81EF7B0F69A21AA /* Pods-plomyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3XXP2WY9Q3;
