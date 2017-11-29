@@ -20,5 +20,7 @@ target 'plomy' do
 	pod 'Firebase/Database'
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
+	pod 'FacebookCore'
+	pod 'FacebookLogin'
 
 end

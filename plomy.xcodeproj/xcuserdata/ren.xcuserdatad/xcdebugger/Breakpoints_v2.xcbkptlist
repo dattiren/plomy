@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "plomy/AppDelegate.swift"
-            timestampString = "533304424.596932"
+            timestampString = "533635295.643266"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "AppDelegate"
-            landmarkType = "3">
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "applicationDidEnterBackground(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

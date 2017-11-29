@@ -12,6 +12,10 @@
 		A51936B71FC993D8003071D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A51936B61FC993D8003071D3 /* GoogleService-Info.plist */; };
 		A55A37F31F7166E400DE037B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55A37F21F7166E400DE037B /* TableViewCell.xib */; };
 		A55A37F51F716FA400DE037B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A37F41F716FA400DE037B /* TableViewCell.swift */; };
+		A568AB911FCD752B0002A2D8 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A568AB901FCD752B0002A2D8 /* FBSDKCoreKit.framework */; };
+		A568AB931FCD754C0002A2D8 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A568AB921FCD754C0002A2D8 /* FBSDKLoginKit.framework */; };
+		A568AB951FCD7B8E0002A2D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568AB941FCD7B8E0002A2D8 /* LoginViewController.swift */; };
+		A56CD6AD1FCE8A26000C836C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56CD6AC1FCE8A26000C836C /* Bolts.framework */; };
 		A586B3FC1FC7095A00D4C8DF /* view_extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586B3FB1FC7095A00D4C8DF /* view_extension.swift */; };
 		A586B3FE1FC7193100D4C8DF /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586B3FD1FC7193100D4C8DF /* CircleImageView.swift */; };
 		A5E3E96F1F4C3CE8002392E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3E96E1F4C3CE8002392E5 /* AppDelegate.swift */; };
@@ -57,6 +61,10 @@
 		A51936B61FC993D8003071D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A55A37F21F7166E400DE037B /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		A55A37F41F716FA400DE037B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A568AB901FCD752B0002A2D8 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4.28.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		A568AB921FCD754C0002A2D8 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../Downloads/FacebookSDKs-iOS-4.28.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		A568AB941FCD7B8E0002A2D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A56CD6AC1FCE8A26000C836C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/FacebookSDKs-iOS-4.28.0/Bolts.framework"; sourceTree = "<group>"; };
 		A586B3FB1FC7095A00D4C8DF /* view_extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view_extension.swift; sourceTree = "<group>"; };
 		A586B3FD1FC7193100D4C8DF /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		A5E3E96B1F4C3CE8002392E5 /* plomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +95,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9F2FF304B00B1399F9F026E /* Pods_plomy.framework in Frameworks */,
+				A568AB911FCD752B0002A2D8 /* FBSDKCoreKit.framework in Frameworks */,
+				A568AB931FCD754C0002A2D8 /* FBSDKLoginKit.framework in Frameworks */,
+				A56CD6AD1FCE8A26000C836C /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +123,9 @@
 		38567060AF66D46D3273E7DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A56CD6AC1FCE8A26000C836C /* Bolts.framework */,
+				A568AB921FCD754C0002A2D8 /* FBSDKLoginKit.framework */,
+				A568AB901FCD752B0002A2D8 /* FBSDKCoreKit.framework */,
 				26F65DD0AAB20C9E7625AAE8 /* Pods_plomy.framework */,
 				DFEAE1E4762D1F6D6B68E1F9 /* Pods_plomyTests.framework */,
 				63E32B11FE57A88ADC9D852A /* Pods_plomyUITests.framework */,
@@ -172,6 +186,7 @@
 				A55A37F41F716FA400DE037B /* TableViewCell.swift */,
 				A586B3FB1FC7095A00D4C8DF /* view_extension.swift */,
 				A586B3FD1FC7193100D4C8DF /* CircleImageView.swift */,
+				A568AB941FCD7B8E0002A2D8 /* LoginViewController.swift */,
 			);
 			path = plomy;
 			sourceTree = "<group>";
@@ -404,6 +419,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-plomy/Pods-plomy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -411,6 +431,11 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -549,6 +574,7 @@
 				A5E3E99E1F4C62DA002392E5 /* PostTableViewCell.swift in Sources */,
 				A586B3FE1FC7193100D4C8DF /* CircleImageView.swift in Sources */,
 				A586B3FC1FC7095A00D4C8DF /* view_extension.swift in Sources */,
+				A568AB951FCD7B8E0002A2D8 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +728,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3XXP2WY9Q3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FacebookCore\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FacebookLogin\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/leveldb-library\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"\"~/Downloads/FacebookSDKs-iOS-4.28.0\"",
+				);
 				INFOPLIST_FILE = plomy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plomy;
@@ -716,6 +759,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3XXP2WY9Q3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FacebookCore\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FacebookLogin\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/leveldb-library\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"\"~/Downloads/FacebookSDKs-iOS-4.28.0\"",
+				);
 				INFOPLIST_FILE = plomy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plomy;
