@@ -11,12 +11,23 @@ import FacebookLogin
 import FacebookCore
 
 class LoginViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         let loginButton = LoginButton(readPermissions: [.publicProfile])
         loginButton.center = view.center
-        
+        print("AccessToken is ")
         view.addSubview(loginButton)
+        print(AccessToken.current)
+        print(isLoggedInWithFacebook())
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewController(withIdentifier: "homeView")
+        if(isLoggedInWithFacebook()){
+            present(nextView, animated: true, completion: nil)
+            //self.performSegue(withIdentifier: "Tab Bar Controller", sender: self)
+        }
     }
     func isLoggedInWithFacebook() -> Bool{
         let loggedIn = AccessToken.current != nil
