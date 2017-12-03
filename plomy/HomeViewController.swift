@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import Firebase
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIApplicationDelegate{
 
     var articles: [String] = []
-    
+    var ref: DatabaseReference!
     @IBOutlet weak var homeTableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //realtime Databaseの初期化
+        ref = Database.database().reference()
+        
         
         //viewControllerに貼り付けたtableViewをこのviewControllerのtableViewにするための処理
         homeTableView.delegate = self
@@ -57,5 +62,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.message.text = articles[indexPath.row]
         cell.layoutIfNeeded()
         return cell
-    } 
+    }
+    func read(){
+      
+    }
 }

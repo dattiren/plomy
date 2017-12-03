@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
@@ -50,6 +51,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+//    func loginButtonDidCompleteLogin(logiButton : LoginButton, result : LoginResult){
+//        switch result {
+//        case let LoginResult.failed(Error):
+//            break
+//        case let LoginResult.success(grantedPermissions , declinedPermissions, token):
+//            let credential = FacebookAuthProvider.credential(withAccessToken: token.authenticationToken)
+//            Auth.auth().signIn(with: credential){(fireUser, fireError) in
+//                if let error = fireError {
+//                    return
+//                }
+//                if let loginVC = self.window?.rootViewController?.presentedViewController{
+//                    loginVC.dismiss(animated: true, completion: nil)
+//                }
+//            }
+//        default:
+//            break
+//        }
+//    }
 
 }
 

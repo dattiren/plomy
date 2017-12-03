@@ -117,7 +117,7 @@
         <!--edit-->
         <scene sceneID="896-On-9QT">
             <objects>
-                <viewController id="jou-Ar-fOB" sceneMemberID="viewController">
+                <viewController id="jou-Ar-fOB" customClass="PostViewController" customModule="plomy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c2q-wr-EqI"/>
                         <viewControllerLayoutGuide type="bottom" id="lKU-dq-2lo"/>
@@ -137,6 +137,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="投稿" id="iIx-eV-GUF">
                                             <color key="tintColor" red="0.27058823529999998" green="0.74901960779999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="post:" destination="jou-Ar-fOB" id="19g-Ig-Ser"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -195,6 +198,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="edit" image="ic_mode_edit" id="VTh-VW-3u6"/>
+                    <connections>
+                        <outlet property="icon" destination="jTz-1U-yKM" id="Z9P-Cw-5vF"/>
+                        <outlet property="message" destination="FQu-Iz-Cwe" id="fnt-Qc-Tay"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7X-yR-CVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
