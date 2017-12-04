@@ -134,6 +134,9 @@
                                         <barButtonItem key="backBarButtonItem" title="✕" id="6RN-vZ-tp0"/>
                                         <barButtonItem key="leftBarButtonItem" title="Close" id="HTu-Vy-Be7">
                                             <color key="tintColor" red="0.27058823529999998" green="0.74901960779999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="close:" destination="thP-gU-jSA" id="iVb-PC-gAe"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="投稿" id="iIx-eV-GUF">
                                             <color key="tintColor" red="0.27058823529999998" green="0.74901960779999999" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -204,6 +207,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7X-yR-CVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="thP-gU-jSA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1020" y="-951.76056338028172"/>
         </scene>

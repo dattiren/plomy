@@ -18,15 +18,20 @@ class PostViewController: UIViewController {
     @IBOutlet weak var postButton: UIBarButtonItem!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
     }
-
+    @IBAction func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
  
     @IBAction func post(_ sender: Any) {
         create()
+        self.dismiss(animated: true, completion: nil)
     }
     
     func textFieldShouldReturn(_ textfield: UITextField) -> Bool {
