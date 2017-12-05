@@ -7,29 +7,39 @@
 //
 
 import UIKit
+import Firebase
+import FacebookCore
 
 class PostViewController: UIViewController {
-
+    var ref = Database.database().reference()
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var icon: CircleImageView!
+    @IBOutlet weak var message: UITextView!
+    @IBOutlet weak var postButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func close(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    */
-
+ 
+    @IBAction func post(_ sender: Any) {
+        create()
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(_ textfield: UITextField) -> Bool {
+        textfield.resignFirstResponder()
+        return true
+    }
+    func create(){
+        guard let text = message.text else{return}
+    self.ref.child((AccessToken.current?.userId)!).childByAutoId().setValue(["user": (AccessToken.current?.userId)!, "content": text, "date": ServerValue.timestamp()])
+    }
 }
