@@ -9,13 +9,18 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    @IBOutlet weak var followlabel: UILabel!
+    @IBOutlet weak var followerlabel: UILabel!
+    @IBOutlet weak var follow: UILabel!
+    @IBOutlet weak var follower: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        followlabel.text = "フォロー"
+        followerlabel.text = "フォロワー"
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
