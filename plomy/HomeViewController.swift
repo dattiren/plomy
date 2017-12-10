@@ -30,7 +30,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                     //let userID = articleObject?["user"]
                     let content = articleObject?["content"] as! String
                     //let timestamp = articleObject?["date"]
-                    self.articles.append(content)
+                    self.articles.insert(content, at:0)
                 }
 //                print(self.articles)
                 self.homeTableView.reloadData()
